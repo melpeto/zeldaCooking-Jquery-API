@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mel Project</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=IM+Fell+English+SC&family=MedievalSharp&family=Roboto+Serif&family=Trade+Winds&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    
+    <header>
+        <h1>Link's Cookin' Kitchen</h1>
+        <h2>A Cooking Resource for Legend of Zelda: Breath of the Wild</h2>
+    </header>
+
+    <div class="wrapper">
+        
+        <div class="instructionsWrapper">
+            <p>In <span class="italics">Breath of the Wild,</span> certain items can be added as ingredients to a Cooking Pot. Each ingredient carries specific effects that are applied to the food when it is cooked.</p>
+            <p class="mainInstruct">Choose your desired effect from the list below to see all the ingredients which will lend that effect to your dish when cooked in the cooking pot.</p>
+            <p>Items with no special effect will still increase hearts when eaten or cooked</p>
+            <p class="italics">Effects are granted to Link when the food is consumed, and have a time limit. These timed effects cannot be stacked - when there is one effect active, eating a food with a different, or even the same effect, will cancel the previously active effect.</p>
+            <p class="italics">Hearty and Enduring effects don't stack either, but if multiples of these dishes are consumed, instead of cancelling the previous effect, the strongest one will remain active</p>
+        </div>
+
+        <form action="#" class="formParent">
+
+            <label for="userEffectSelection">Choose your desired effect:</label>
+            
+            <select name="userEffectSelection" id="userEffectSelection">
+                <option value="">No specific effect (Increase Hearts Only)</option>
+                <option value="cold resistance">Cold Resistance ("Spicy")</option>
+                <option value="shock resistance">Shock Resistance ("Electro")</option>
+                <option value="heat resistance">Heat Resistance ("Chilly")</option>
+                <option value="flame guard">Flame Guard ("Fireproof")</option>
+                <option value="attack up">Attack Up ("Mighty")</option>
+                <option value="defense up">Defense Up ("Tough")</option>
+                <option value="speed up">Speed Up ("Hasty")</option>
+                <option value="stealth up">Stealth Up ("Sneaky")</option>
+                <option value="stamina recovery">Stamina Recovery ("Energizing")</option>
+                <option value="extra stamina">Increase Maximum Stamina ("Enduring")</option>
+                <option value="extra hearts">Increase Maximum Hearts ("Hearty")</option>
+            </select>
+
+        </form>
+
+        <section class="resultsParent">
+            <div class="itemParentContainer">
+                <ul class="unorderedList">
+                    <!-- RESULTS HERE: (html appended by jQuery)
+                    <li class="listItem">
+                        <h3 class="name">${name}</h3>
+                        <p class="effect">${effect}</p>
+                        <div class="imageContainer">
+                            <img src="${img}" alt="${name}" class="itemImage">
+                        </div>
+                        <div class="descriptionContainer">
+                            <h4>Description:</h4>
+                            <p class="descriptionText">${description}</p>
+                        </div>
+                    </li>-->
+                </ul>
+            </div>
+        </section>
+
+    </div> <!--main wrapper closing tag-->
+
+    <footer>
+        <p>Created by Melanie Peto at <a href="https://junocollege.com/">Juno College</a></p>
+        <p>Data courtesy of the <a href="https://gadhagod.github.io/Hyrule-Compendium-API/#/?id=entry">Hyrule Compendium API</a> by <a href="https://github.com/gadhagod">Aarav Borthakur</a></p>
+        <p>Cooking/Food information courtesy of <a href="https://zelda.fandom.com/wiki/Food#Food_Effects">Zelda Wiki</a> </p>
+    </footer>
+
+    <!-- jQuery and script tag -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
