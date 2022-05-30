@@ -20,8 +20,14 @@ footer {
     background-color: #92c582;
 }
 
+header {
+    min-height: 60vh;
+    background-image: url(./assets/mobile-1\ copy.jpg);
+}
+
 h1 {
-    font-size: 36px;;
+    font-size: 36px;
+    margin-top: 0;
 }   
 
 h2 {
