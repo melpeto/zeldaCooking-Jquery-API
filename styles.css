@@ -9,29 +9,43 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 body {
-    text-align: center;
+    font-size: 125%;
     font-family: 'Roboto Serif', serif;
-    background-color: #fdffe0;
+    text-align: center;
+    background-color: #fefcf0;
 }
 
 header,
 footer {
     font-family: 'IM Fell English SC', serif;
-    background-color: #92c582;
+    background-color: #f7e1a7;
 }
 
 header {
     min-height: 60vh;
     background-image: url(./assets/mobile-1\ copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 h1 {
-    font-size: 36px;
-    margin-top: 0;
+    font-size: 8rem;
+    margin: 0;
 }   
 
 h2 {
-    font-size: 32px;
+    font-size: 1.5rem;
+    text-align: start;
+    margin-left: 100px;
+}
+
+h2 span {
+    display: block;
 }
 
 .wrapper {
@@ -43,12 +57,16 @@ h2 {
 .instructionsWrapper {
     max-width: 65%;
     margin: 0 auto;
+    margin: 50px auto;
+    text-align: justify;
+    line-height: 30px;
 }
 
 .mainInstruct {
+    line-height: 30px;
     width: 100%;
-    border: 2px solid #92c582;
-    background-color: #c5e8ba;
+    border: 2px solid #264153;
+    background-color: #719EAD;
     padding: 15px;
 }
 .italics{
@@ -56,9 +74,9 @@ h2 {
 }
 
 .formParent {
-    font-size: 24px;
-    border: 2px solid #92c582;
-    background-color: #c5e8ba;
+    font-size: 1.4rem;
+    border: 2px solid #264153;
+    background-color: #719EAD;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -83,7 +101,7 @@ li {
 }
 
 li {
-    border: 2px solid #92c582;
+    border: 2px solid #264153;
     border-radius: 10px;
     margin: 15px;
     max-width: calc(30% - 24px);
@@ -111,7 +129,8 @@ img {
 }
 
 footer {
-    font-size: 16px;
+    font-size: 1.2rem;
+    padding: 20px;
 }
 
 footer > p {

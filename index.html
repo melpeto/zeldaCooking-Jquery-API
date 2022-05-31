@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mel Project</title>
+    <title>Link's Kitchen</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,10 @@
 <body>
     
     <header>
-        <h1>Link's Cookin' Kitchen</h1>
-        <h2>A Cooking Resource for Legend of Zelda: Breath of the Wild</h2>
+        <div class="wrapper">
+            <h1>Link's Kitchen</h1>
+            <h2>A Cooking Resource for <span>Legend of Zelda: Breath of the Wild</span></h2>
+        </div>
     </header>
 
     <div class="wrapper">
@@ -52,18 +54,7 @@
         <section class="resultsParent">
             <div class="itemParentContainer">
                 <ul class="unorderedList">
-                    <!-- RESULTS HERE: (html appended by jQuery)
-                    <li class="listItem">
-                        <h3 class="name">${name}</h3>
-                        <p class="effect">${effect}</p>
-                        <div class="imageContainer">
-                            <img src="${img}" alt="${name}" class="itemImage">
-                        </div>
-                        <div class="descriptionContainer">
-                            <h4>Description:</h4>
-                            <p class="descriptionText">${description}</p>
-                        </div>
-                    </li>-->
+                    <!-- RESULTS HERE-->
                 </ul>
             </div>
         </section>
@@ -71,12 +62,10 @@
     </div> <!--main wrapper closing tag-->
 
     <footer>
-        <p>Created by Melanie Peto at <a href="https://junocollege.com/">Juno College</a></p>
-        <p>Data courtesy of the <a href="https://gadhagod.github.io/Hyrule-Compendium-API/#/?id=entry">Hyrule Compendium API</a> by <a href="https://github.com/gadhagod">Aarav Borthakur</a></p>
-        <p>Cooking/Food information courtesy of <a href="https://zelda.fandom.com/wiki/Food#Food_Effects">Zelda Wiki</a> </p>
+        <p>Created by <a href="https://www.melpeto.com/">Melanie Peto</a> at <a href="https://junocollege.com/">Juno College</a></p>
+        <p>Data courtesy of the <a href="https://gadhagod.github.io/Hyrule-Compendium-API/#/?id=entry">Hyrule Compendium API</a> by <a href="https://github.com/gadhagod">Aarav Borthakur</a>  |  Cooking/Food information courtesy of <a href="https://zelda.fandom.com/wiki/Food#Food_Effects">Zelda Wiki</a></p>
     </footer>
 
-    <!-- jQuery and script tag -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
 
