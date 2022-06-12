@@ -18,9 +18,10 @@
             <h1>Link's Kitchen</h1>
             <h2>A Cooking Resource for <span>Legend of Zelda: Breath of the Wild</span></h2>
         </div>
+        <div class="overlay"></div>
     </header>
 
-    <div class="wrapper">
+    <main class="wrapper">
         
         <div class="instructionsWrapper">
             <p>In <span class="italics">Breath of the Wild,</span> certain items can be added as ingredients to a Cooking Pot. Each ingredient carries specific effects that are applied to the food when it is cooked.</p>
@@ -35,6 +36,7 @@
             <label for="userEffectSelection">Choose your desired effect:</label>
             
             <select name="userEffectSelection" id="userEffectSelection">
+                <option value disabled selected>Please choose an effect</option>
                 <option value="">No specific effect (Increase Hearts Only)</option>
                 <option value="cold resistance">Cold Resistance ("Spicy")</option>
                 <option value="shock resistance">Shock Resistance ("Electro")</option>
@@ -59,7 +61,7 @@
             </div>
         </section>
 
-    </div> <!--main wrapper closing tag-->
+    </main> <!--main wrapper closing tag-->
 
     <footer>
         <p>Created by <a href="https://www.melpeto.com/">Melanie Peto</a> at <a href="https://junocollege.com/">Juno College</a></p>
